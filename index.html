@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <!-- CSS STYLESHEETS -->
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <!-- FONT OUTFIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <main id="container">
+        <div class="image-container">
+            <img src="background-image.jpg" alt="Landscape photo">
+        </div>
+        <div class="form-container">
+            <h1 class="form-title">Canterbury to Rome in bike</h1>
+            <p class="form-text">
+                Participate in Europe's most epic voyage in 2022.<br /> Over 1,800 kilometres in three weeks. Take
+                advantage of the riding experience with the pros.
+            </p>
+            <form action="" class="form">
+                <div>
+                    <label for="name" class="form__label">Name</label>
+                    <input type="text" class="form__input" required>
+                    <label for="surname" class="form__label">Surname</label>
+                    <input type="text" class="form__input" required>
+                    <label for="Age" class="form__label">Age</label>
+                    <input type="number" class="form__input" required>
+                </div>
+                <div>
+                    <label for="cellphone" class="form__label">Cellphone Number</label>
+                    <input type="tel" class="form__input" minlength="3" required>
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" class="form__input" required>
+                    <label for="partner" class="form__label">Partner</label>
+                    <select name="partner" id="partner" class="form__select" required>
+                        <option value="">Select an option</option>
+                        <option value="specialized">Specialized</option>
+                        <option value="giant">Giant</option>
+                        <option value="scott">Scott</option>
+                        <option value="merida">Merida</option>
+                        <option value="pinarello">Pinarello</option>
+                        <option value="canyon">Canyon</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </main>
     <script src="./app.js"></script>
 </body>
+
 </html>
