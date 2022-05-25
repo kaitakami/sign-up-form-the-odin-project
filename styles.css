@@ -14,7 +14,6 @@
 body {
     color: var(--main-color);
     background-color: var(--background-color);
-    overflow: hidden;
     font-family: var(--main-font-family);
     font-weight: var(--text-font-weight);
     font-size: var(--text-font-size);
@@ -28,7 +27,7 @@ body {
 /* IMAGE */
 
 .image-container {
-    width: 40%;
+    width: 50%;
     margin-right: 30px;
 }
 
@@ -36,7 +35,22 @@ img {
     height: 100vh;
     filter: brightness(70%);
     width: 100%;
+    position: relative;
     object-fit: cover;
+}
+
+.overlay-image {
+    height: 90px;
+    width: auto;
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    transition: 400ms ease;
+}
+
+.overlay-image:hover {
+    transform: scale(1.1) rotate(360deg);
 }
 
 /* FORM */
