@@ -158,12 +158,28 @@ img {
         left: 45%;
     }
 
+    
+
     .form-container {
         margin: 20px 10px;
+    }
+
+    .form__input {
+        margin: 0;
+        width: calc(100% - 48px);
+        display: inline;
     }
 
     .main__button {
         margin: 16px 32px 16px 32px;
         width: 100%;
+    }
+
+    .form div {
+        width: 100%;
+    }
+
+    .form__label {
+        display: block;
     }
 }
