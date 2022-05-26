@@ -8,7 +8,7 @@
     --sm-text-font-weight: 300;
     --text-font-size: 1rem;
     --title-font-size: 2rem;
-    --sm-text-font-size: 0.9rem;  
+    --sm-text-font-size: 0.9rem;
 }
 
 body {
@@ -71,7 +71,9 @@ img {
     margin: 0 16px 0 0;
 }
 
-.form__input, .form__label, .form__select {
+.form__input,
+.form__label,
+.form__select {
     display: block;
     margin: 8px 0;
     border-radius: 4px;
@@ -104,6 +106,7 @@ img {
 .form__input:valid {
     border: 2px solid green;
 }
+
 /* FINISH INPUT DESIGN */
 
 .form__select {
@@ -132,4 +135,35 @@ img {
     background-color: var(--main-color);
     color: var(--background-color);
     transform: scale(1.03);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+    #container {
+        display: block;
+    }
+
+    .image-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        height: 20vh;
+    }
+
+    .overlay-image {
+        height: 70px;
+        top: 25px;
+        left: 45%;
+    }
+
+    .form-container {
+        margin: 20px 10px;
+    }
+
+    .main__button {
+        margin: 16px 32px 16px 32px;
+        width: 100%;
+    }
 }
